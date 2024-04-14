@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE SHOPS TIA ROSA</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- ÍNICIO - HOME -->
+    <section id="home" class="home">
+        <header>
+            <a href="#home" class="logo">
+                <h1>COFFEE SHOP</h1>
+                <h2>TIA ROSA</h2>
+            </a>
+            <nav id="menu-desktop">
+                <ul class="header_list_nav">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#coffees">Cafés</a>
+                    </li>
+                    <a href="#internet" class="internet_header_btn">Internet</a>
+                </ul>
+            </nav>
+            <div class="menu-mobile-container">
+                <button onclick="handleOpenMenu()" class="menu-button"><i class="bi bi-list"></i></button>
+                <nav id="menu-mobile" class="disabled">
+                    <ul>
+                        <li>
+                            <button onclick="handleCloseMenu()" class="menu-button-close"><i class="bi bi-x-lg"></i></button>
+                        </li>
+                        <li>
+                            <a onclick="handleCloseMenu()" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a onclick="handleCloseMenu()" href="#about">Sobre</a>
+                        </li>
+                        <li>
+                            <a onclick="handleCloseMenu()" href="#coffees">Cafés</a>
+                        </li>
+                        <li>
+                            <a onclick="handleCloseMenu()" href="#internet">Internet</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="home-main">
+            <div class="home-title-container">
+                <h1 class="home-title"><strong>O melhor café da cidade</strong></h1>
+                <p class="home-subtitle">Nossa paixão pela arte do café transborda em cada grão cuidadosamente selecionado e meticulosamente preparado.</p>
+                <div class="home-buttons">
+                    <a class="btn-coffe" href="#coffees">Cafés</a>
+                    <a class="btn-internet" href="#internet">Internet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SOBRE -->
+    <section id="about" class="about">
+        <div class="image-about-container">
+            <img src="./assets/about.jpg" alt="xicara de café">
+        </div>
+        <div class="about-text-container">
+            <h2>Sobre o coffee shops <span class="tia-rosa">tia rosa</span></h2>
+            <p>Desperte seus sentidos em nosso charmoso refúgio café, onde cada xícara é uma experiência sensorial. <br>Nossa paixão pela arte do café transborda em cada grão cuidadosamente selecionado e meticulosamente preparado. <br>Deixe-se envolver pelo aroma tentador que dança no ar, enquanto saboreia nossos deliciosos blends artesanais e cria memórias que perduram além da última gota. <br>Seja bem-vindo ao seu refúgio aromático, onde cada gole é uma jornada de prazer e descoberta.</p>
+            <a class="social-btn" href="#"><i class="bi bi-chat-heart"></i> Redes Sociais</a>
+        </div>
+    </section>
+    <!-- CAFÉS -->
+    <section id="coffees" class="coffees">
+        <div class="coffee-title">
+            <h2 class="coff">CAFÉS CLÁSSICOS</h2>
+            <div class="coffees-line-container">
+                <p class="text-before-line">Nossos melhores cafés</p>
+                <div class="coffee-line"></div>
+            </div>
+        </div>
+        <!-- LISTA DE CAFÉS -->
+        <div class="all-coffees">
+            <ul>
+                <li class="coffee-item">
+                    <img src="assets/coffees/espresso.jpg" alt="espresso" width="100">
+                    <div class="coffee-item-desc">
+                        <div>
+                            <h3 class="coffee-name">Espresso</h3>
+                            <p class="coffee-desc">Potente e encorpado. 60ml</p>
+                        </div>
+                        <span class="coffee-price">7,00</span>
+                    </div>
+                </li>
+                <li class="coffee-item">
+                    <img src="assets/coffees/americano.png" alt="americano" width="100">
+                    <div class="coffee-item-desc">
+                        <div>
+                            <h3 class="coffee-name">Americano</h3>
+                            <p class="coffee-desc">Espresso duplo suavizado com água. 380ml</p>
+                        </div>
+                        <span class="coffee-price">10,00</span>
+                    </div>
+                </li>
+                <li class="coffee-item">
+                    <img src="assets/coffees/cappuccino.png" alt="cappuccino" width="100">
+                    <div class="coffee-item-desc">
+                        <div>
+                            <h3 class="coffee-name">Cappuccino</h3>
+                            <p class="coffee-desc">Estilo Italiano. Espresso e leite vaporizado. Bem Cremoso. 380ml</p>
+                        </div>
+                        <span class="coffee-price">13,00</span>
+                    </div>
+                </li>
+                <li class="coffee-item">
+                    <img src="assets/coffees/caramelo-macchiato.png" alt="caramelo-macchiato" width="100">
+                    <div class="coffee-item-desc">
+                        <div>
+                            <h3 class="coffee-name">Caramelo Macchiato</h3>
+                            <p class="coffee-desc">Espresso, leite vaporizado e calda de caramelo. 380ml</p>
+                        </div>
+                        <span class="coffee-price">16,00</span>
+                    </div>
+                </li>
+                <li class="coffee-item">
+                    <img src="assets/coffees/flat-white.png" alt="flat-white" width="100">
+                    <div class="coffee-item-desc">
+                        <div>
+                            <h3 class="coffee-name">Flat White</h3>
+                            <p class="coffee-desc">Espresso e leite vaporizado. Sabor do café mais delicado. 380ml</p>
+                        </div>
+                        <span class="coffee-price">16,00</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- INTERNT -->
+    <section id="internet" class="internet">
+        <div class="coffee-title">
+            <h2 class="int">ACESSO A INTERNET</h2>
+            <div class="coffees-line-container">
+                <p class="text-before-line int">Wifi free</p>
+                <div class="coffee-line internet-line"></div>
+            </div>
+        </div>
+        <div class="internet-main">
+            <p>Embarque em uma pausa revigorante em <strong>COFFEE SHOP <span class="tia-rosa">TIA ROSA</span></strong>, onde o aroma do café fresco se mistura com a comodidade moderna do WiFi gratuito. Aqui, não apenas você desfruta de nossos deliciosos grãos cuidadosamente selecionados, mas também pode se conectar ao mundo digital enquanto relaxa em nosso ambiente acolhedor. Deixe-nos cuidar de sua sede por café e por conexão, enquanto você mergulha em momentos de prazer e produtividade. Sinta-se em casa em <strong>COFFEE SHOP <span class="tia-rosa">TIA ROSA</span></strong>, onde cada visita é uma combinação perfeita de sabor e conectividade.</p>
+            <span class="icon-internet"><i class="bi bi-wifi"></i></span>
+        </div>
+    </section>
+    <!-- RODAPÉ -->
+    <footer>
+        <a href="#home" class="logo">
+            <h1 class="footer-logo">COFFEE SHOP</h1>
+            <h2>TIA ROSA</h2>
+        </a>
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">Sobre</a>
+            </li>
+            <li>
+                <a href="#coffees">Cafés</a>
+            </li>
+            <li>
+                <a href="#internet">Internet</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
